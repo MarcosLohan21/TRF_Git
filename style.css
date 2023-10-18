@@ -1,0 +1,83 @@
+body .OQEmp {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+body .CacEMp {
+    width: 50%;
+    margin: auto;
+    text-align:justify;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body .TipEMp {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+body .CSEmp {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.anuncio-lateral {
+    display: block;
+    width: 30%;
+    margin: auto;
+    border: 2px solid black;
+    width: 645px;
+    height: 312px;
+}
+
+
+body {
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    padding: 20px;
+    color: white;
+    
+}
+
+body .GDEmp {
+    width: 50%;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.botao {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-style: oblique;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+  
+.botao:focus {
+    outline: none; 
+  }
+  
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

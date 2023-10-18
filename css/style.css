@@ -1,0 +1,47 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    background-color: papayawhip;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;  
+    font-size: 30px;
+}
+
+li{
+    list-style: none;
+    font-size:larger;
+    line-height: 2; 
+    font-size: 24px;
+}
+
+ul{
+    padding: 0px;
+}
+
+nav {
+    background-color: #50505052; 
+    padding: 20px; 
+    width: 300px; 
+    margin-left: 40%;
+    margin-top: 10%;
+    text-align: center; 
+    border: 2px solid black;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;  
+}
+
+.destaque {
+    color: orangered;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;  
+}
