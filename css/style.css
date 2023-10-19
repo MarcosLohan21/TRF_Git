@@ -9,35 +9,36 @@ h1 {
     text-shadow: 1px 1px 1px #000;
 }
 
-li{
-    list-style: none;
-    font-size:larger;
-    line-height: 2; 
-    font-size: 24px;
-}
-
 ul{
     padding: 0px;
 }
 
-nav {
-    background-color: #50505052; 
-    padding: 20px; 
-    width: 300px; 
-    margin-left: 40%;
-    margin-top: 10%;
-    text-align: center; 
-    border: 2px solid black;
+header {
+    background-color: rgba(51, 51, 51, 0.842);
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000;
 }
 
-a{
-    text-decoration: none;
-    outline: none;
-    color: white;
-    text-shadow: 2px 2px 2px #000;
-}
-
-.destaque {
-    color: orangered;
-    text-shadow: 2px 2px 2px #000;
+footer {
+    background-color: rgba(51, 51, 51, 0.842);
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    position: fixed;
+    top: 914px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000;
 }
