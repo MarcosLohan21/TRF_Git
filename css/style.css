@@ -38,7 +38,7 @@ footer {
     text-shadow: 1px 1px 1px #000;
 }
 
-body.dark-mode {
+.dark-mode {
     background-color: rgb(104, 96, 84);
     /* Cor de fundo do modo noturno (escuro) */
     color: #fff;
