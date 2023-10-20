@@ -1,121 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao GIT</title>
     <link rel="stylesheet" href="./../css/style.css">
+    <link rel="icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="ico" href="./../img/git.png" type="image/png">
 </head>
+
 <body>
     <header>
         <h1>Introdução ao <span class="destaque">Git</span></h1>
     </header>
     <nav>
         <main>
-            <article>
-        <p>O Git é um sistema de controle de versão distribuído amplamente usado no desenvolvimento de software e outros tipos de projetos. Ele foi criado por Linus Torvalds, o mesmo criador do sistema operacional Linux, e foi lançado em 2005. A história da criação do Git é interessante e tem suas raízes na necessidade de gerenciar o desenvolvimento do kernel do Linux. Aqui estão alguns pontos-chave sobre a criação do Git:
-        </p>
-        <ul>
-            <li>Necessidade de um Novo Sistema de Controle de Versão:
-                No início dos anos 2000, o desenvolvimento do kernel do Linux era gerenciado pelo sistema de controle de versão BitKeeper. No entanto, o relacionamento entre a comunidade de desenvolvimento do kernel e a empresa por trás do BitKeeper ficou tenso, e a ferramenta de controle de versão deixou de ser gratuita para uso no projeto do kernel.</li>
-            <li>Linus Torvalds Assume o Controle:
-                Em resposta a essa situação, Linus Torvalds decidiu criar seu próprio sistema de controle de versão para gerenciar o desenvolvimento do kernel do Linux. Ele queria uma ferramenta que fosse rápida, eficiente, escalável e pudesse ser usada gratuitamente. Ele começou a trabalhar no Git em 2005 e lançou a primeira versão pública em abril do mesmo ano.</li>
-        </ul>
-        <img src="./../img/linus.jpg" alt="">
-        </article>
-        <div class="butao"><br>
-        <a href="./index.html" target="_self" class="botao">Voltar para tela inicial</a>
-        </div>
-        <article>
-            <p>Características do Git:
-            O Git foi projetado com algumas características fundamentais:</p>
-        
-            <ul>
-                <li>Distribuído: Cada desenvolvedor tem uma cópia completa do repositório, permitindo trabalho offline e descentralizado.
-                <li>Rápido: O Git é notavelmente rápido em operações comuns, como commits, branches e merges.
-                <li>Seguro: Os dados do Git são protegidos por criptografia, e as operações são verificadas para garantir a integridade.
-                <li>Flexível: O Git é altamente adaptável a diferentes fluxos de trabalho de desenvolvimento.
-                <li>Popularização e Comunidade:
-                <li>O Git rapidamente ganhou popularidade não apenas para o desenvolvimento do kernel do Linux, mas também em todo o mundo do desenvolvimento de software. Serviços como GitHub e GitLab ajudaram a difundir ainda mais o Git, facilitando a colaboração em projetos de código aberto e privados.
-                <li>Evolução Contínua:
-                O Git é um software de código aberto, o que significa que é continuamente aprimorado e aprimorado por uma comunidade ativa de desenvolvedores. Novos recursos e melhorias são lançados regularmente.
-        </ul>
-    </article>
-    
+            <div class="artigo1">
+                <article>
+                    <p>O Git é um sistema de controle de versão distribuído amplamente usado no desenvolvimento de
+                        software e outros tipos de projetos. Ele foi criado por Linus Torvalds, o mesmo criador do
+                        sistema operacional Linux, e foi lançado em 2005. A história da criação do Git é interessante e
+                        tem suas raízes na necessidade de gerenciar o desenvolvimento do kernel do Linux. Aqui estão
+                        alguns pontos-chave sobre a criação do Git:
+                    </p>
+                    <ul>
+                        <li>Necessidade de um Novo Sistema de Controle de Versão:
+                            No início dos anos 2000, o desenvolvimento do kernel do Linux era gerenciado pelo sistema de
+                            controle de versão BitKeeper. No entanto, o relacionamento entre a comunidade de
+                            desenvolvimento do kernel e a empresa por trás do BitKeeper ficou tenso, e a ferramenta de
+                            controle de versão deixou de ser gratuita para uso no projeto do kernel.</li>
+                        <li>Linus Torvalds Assume o Controle:
+                            Em resposta a essa situação, Linus Torvalds decidiu criar seu próprio sistema de controle de
+                            versão para gerenciar o desenvolvimento do kernel do Linux. Ele queria uma ferramenta que
+                            fosse rápida, eficiente, escalável e pudesse ser usada gratuitamente. Ele começou a
+                            trabalhar no Git em 2005 e lançou a primeira versão pública em abril do mesmo ano.</li>
+                    </ul>
+                    <img src="./../img/linus.jpg" alt="">
+                </article>
+            </div>
+            <div class="butao"><br>
+                <a href="./index.html" target="_self" class="botao">Voltar para tela inicial</a>
+            </div>
+            <div class="artigo2">
+                <article>
+                    <p>Características do Git:
+                        O Git foi projetado com algumas características fundamentais:</p>
 
-<style>
+                    <ul>
+                        <li>Distribuído: Cada desenvolvedor tem uma cópia completa do repositório, permitindo trabalho
+                            offline e descentralizado.
+                        <li>Rápido: O Git é notavelmente rápido em operações comuns, como commits, branches e merges.
+                        <li>Seguro: Os dados do Git são protegidos por criptografia, e as operações são verificadas para
+                            garantir a integridade.
+                        <li>Flexível: O Git é altamente adaptável a diferentes fluxos de trabalho de desenvolvimento.
+                        <li>Popularização e Comunidade:
+                        <li>O Git rapidamente ganhou popularidade não apenas para o desenvolvimento do kernel do Linux,
+                            mas também em todo o mundo do desenvolvimento de software. Serviços como GitHub e GitLab
+                            ajudaram a difundir ainda mais o Git, facilitando a colaboração em projetos de código aberto
+                            e privados.
+                        <li>Evolução Contínua:
+                            O Git é um software de código aberto, o que significa que é continuamente aprimorado e
+                            aprimorado por uma comunidade ativa de desenvolvedores. Novos recursos e melhorias são
+                            lançados regularmente.
+                    </ul>
+                </article>
+            </div>
 
-li{
-    list-style: none;
-    font-size:larger;
-    line-height: 1.5; 
-    font-size: 17px;
-}
+            <style>
+                .destaque {
+                    color: rgb(255, 69, 0);
+                }
+
+                li {
+                    list-style: none;
+                    font-size: larger;
+                    line-height: 1.5;
+                    font-size: 17px;
+                }
+
+                h1 {
+                    color: rgb(255, 255, 255);
+                    text-shadow: 1px 1px 1px #000;
+                }
+
+                main .artigo1 {
+                    background-color: #50505027;
+                    padding: 5px;
+                    width: auto;
+                    margin-left: auto;
+                    margin-right: 10px;
+                    margin-top: 7%;
+                    margin-bottom: 1%;
+                    text-align: justify;
+                    border: 2px solid black;
+                }
+
+                main .artigo2 {
+                    background-color: #50505027;
+                    padding: 5px;
+                    width: auto;
+                    margin-left: auto;
+                    margin-right: 10px;
+                    margin-top: 2%;
+                    margin-bottom: 3%;
+                    text-align: justify;
+                    border: 2px solid black;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .botao {
+                    background: orangered;
+                    color: white;
+                    border: 2px solid black;
+                    margin-left: 800px;
+                    width: 100px;
+                    padding: 10px 20px;
+                    font-size: 20px;
+                    font-style: oblique;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: background-color 0.3s, color 0.3s;
+                    text-decoration: none;
+                    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .botao:focus {
+                    outline: none;
+                }
 
 
-article {
-    background-color: #50505027; 
-    padding: 5px; 
-    width: auto; 
-    margin-left: auto;
-    margin-right: 10px;
-    margin-top: 2%;
-    text-align: justify; 
-    border: 2px solid black; 
-}
+                img {
+                    border-radius: 20%;
+                    margin-left: 600px;
+                    width: auto;
+                    height: 250px;
 
-p {
-    font-size: 16px;
-}
-
-.botao {
-    background: orangered;
-    color: white;
-    border: 2px solid black;
-    margin-left: 800px;
-    width: 100px;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-style: oblique;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
-  }
-  
-.botao:focus {
-    outline: none; 
-  }
-  
-.botao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-img {
-    border-radius: 20%;
-    margin-left: 600px;
-    width: auto;
-    height: 250px;
-
-}
+                }
 
 
 
-header{
-    font-size: 20px;
-}
-  
+                header {
+                    background-color: rgba(51, 51, 51, 0.842);
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 100;
+                    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+                    color: rgb(255, 255, 255);
+                    text-shadow: 1px 1px 1px #000;
+                    font-size: 20px;
+                }
 
-</style>
+                footer {
+                    background-color: rgba(51, 51, 51, 0.842);
+                    color: #fff;
+                    padding: 1px;
+                    text-align: center;
+                    position: fixed;
+                    top: 914px;
+                    left: 0;
+                    right: 0;
+                    z-index: 100;
+                    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+                    color: rgb(255, 255, 255);
+                    text-shadow: 1px 1px 1px #000;
+                }
+            </style>
 
-    </main>
-   </nav>
-<footer>
-    <p>todos os direitos reservados © </p>
-</footer>
+        </main>
+    </nav>
+    <footer>
+        <p>todos os direitos reservados © </p>
+    </footer>
 </body>
+
 </html>

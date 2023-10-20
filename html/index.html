@@ -1,79 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual do Git</title>
     <link rel="stylesheet" href="./../css/style.css">
+    <link rel="icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="ico" href="./../img/git.png" type="image/png">
 </head>
+
 <body>
     <header>
         <p>Marcos Lohan Ventura Souza</p>
     </header>
 
     <style>
-nav {
-    background-color: #50505052; 
-    padding: 20px; 
-    width: 300px; 
-    margin-left: auto;
-    margin-right: 300px;
-    margin-top: 10%;
-    text-align: center; 
-    border: 2px solid black;
-}
+        nav {
+            background-color: #50505052;
+            padding: 20px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: 300px;
+            margin-top: 10%;
+            text-align: center;
+            border: 2px solid black;
+        }
 
-li{
-    list-style: none;
-    font-size:larger;
-    line-height: 2; 
-    font-size: 24px;
-}
+        li {
+            list-style: none;
+            font-size: larger;
+            line-height: 2;
+            font-size: 24px;
+        }
 
-a{
-    text-decoration: none;
-    outline: none;
-    color: white;
-    text-shadow: 2px 2px 2px #000;
-}
+        a {
+            text-decoration: none;
+            outline: none;
+            color: white;
+            text-shadow: 2px 2px 2px #000;
+        }
 
-.destaque {
-    color: rgb(255, 69, 0);
-    text-shadow: 2px 2px 2px #000;
-}
+        .destaque {
+            color: rgb(255, 69, 0);
+            text-shadow: 2px 2px 2px #000;
+        }
 
-img{
-    width: auto;
-    height: 500px;
-    display: flexbox;
-    margin-left: 300px;
-    margin-right: auto;
-    margin-top: 10%;
-    background-color: rgb(255, 68, 0);
-    border-radius: 50%;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
-}
+        img {
+            width: auto;
+            height: 500px;
+            display: flexbox;
+            margin-left: 300px;
+            margin-right: auto;
+            margin-top: 10%;
+            background-color: rgb(255, 68, 0);
+            border-radius: 50%;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+        }
 
-header{
-    font-size: 27px;
-}
+        header {
+            font-size: 27px;
+        }
 
-</style>
+        h1 {
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px #000;
+        }
 
-<img src="./../img/git.png" alt="">
+        footer {
+            background-color: rgba(51, 51, 51, 0.842);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 920px;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        .botao {
+            background: orangered;
+            color: white;
+            border: 2px solid black;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-left: 60px;
+            font-style: oblique;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botao:focus {
+            outline: none;
+        }
+    </style>
+
+    <img src="./../img/git.png" alt="">
     <nav>
-    <h1>Manual do <span class="destaque">Git</span></h1>
-    <ul>
-        <li><a href="./index2.html">Introducão ao Git</a></li>
-        <li><a href="./index3.html">Instalacão e Configuracão</a></li>
-        <li><a href="./index4.html">Comandos Básicos</a></li>
-        <li><a href="./index5.html">Repositórios Remotos</a></li>
-        <li><a href="./index6.html">Histórico e Log</a></li>
-        <li><a href="./index7.html">Referências e Recursos Adicionais</a></li>
-        <li><a href="./index8.html">Perguntas Frequentes (FAQ)</a></li>
-    </ul>
-   </nav>
-   <footer>Todos os direitos reservados ©</footer>
+        <h1>Manual do <span class="destaque">Git</span></h1>
+        <ul>
+            <li><a href="./index2.html">Introducão ao Git</a></li>
+            <li><a href="./index3.html">Instalacão e Configuracão</a></li>
+            <li><a href="./index4.html">Comandos Básicos</a></li>
+            <li><a href="./index5.html">Repositórios Remotos</a></li>
+            <li><a href="./index6.html">Histórico e Log</a></li>
+            <li><a href="./index7.html">Referências e Recursos Adicionais</a></li>
+            <li><a href="./index8.html">Perguntas Frequentes (FAQ)</a></li>
+            <button class="botao" id="mode-toggle">Modo Noturno</button>
+        </ul>
+    </nav>
+    <script>
+        const body = document.body;
+        const modeToggle = document.querySelector('#mode-toggle');
+
+        modeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+    </script>
+    <footer>Todos os direitos reservados ©</footer>
+
 </body>
+
 </html>

@@ -1,15 +1,10 @@
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     background-color: papayawhip;
 }
 
-h1 {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px #000;
-}
-
-ul{
+ul {
     padding: 0px;
 }
 
@@ -31,14 +26,21 @@ header {
 footer {
     background-color: rgba(51, 51, 51, 0.842);
     color: #fff;
-    padding: 1px;
+    padding: 10px;
     text-align: center;
     position: fixed;
-    top: 914px;
+    top: 930px;
     left: 0;
     right: 0;
     z-index: 100;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px #000;
+}
+
+body.dark-mode {
+    background-color: rgb(104, 96, 84);
+    /* Cor de fundo do modo noturno (escuro) */
+    color: #fff;
+    /* Cor do texto do modo noturno (claro) */
 }
