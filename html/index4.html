@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao GIT</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="ico" href="./../img/git.png" type="image/png">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(214, 201, 179);
+        }
+
+        tr:nth-child(even) {
+            background-color: papayawhip;
+        }
+
+        tr:nth-child(odd) {
+            background-color: papayawhip;
+        }
+
+        tr:hover {
+            background-color: rgb(143, 131, 112);
+        }
+
+        .destaque {
+            color: rgb(255, 69, 0);
+        }
+
+
+        li {
+            list-style: none;
+            font-size: larger;
+            line-height: 1.5;
+            font-size: 17px;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        main .artigo1 {
+            background-color: #50505027;
+            padding: 5px;
+            width: 800px;
+            margin-left: 520px;
+            margin-top: 150px;
+            text-align: left;
+            border: 2px solid black;
+        }
+
+
+        p {
+            font-size: 16px;
+        }
+
+        .botao {
+            background: orangered;
+            color: white;
+            border: 2px solid black;
+            margin-left: 850px;
+            width: 100px;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-style: oblique;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .botao:focus {
+            outline: none;
+        }
+
+
+        img {
+            border-radius: 20%;
+            margin-left: 600px;
+            width: auto;
+            height: 250px;
+
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.842);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px #000;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.842);
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            position: fixed;
+            top: 905px;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Comandos <span class="destaque">Basicos</span></h1>
+    </header>
+    <nav>
+        <main>
+            <div class="artigo1">
+                <article>
+                    <table border="1px">
+                        <tr>
+                            <th>Comando</th>
+                            <th>Descrição</td>
+                        </tr>
+                        <tr>
+                            <th>git init</th>
+                            <td>Para iniciar um novo repositório Git em um diretório existente, use o seguinte comando.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>git clone (URL)</th>
+                            <td>Para clonar um repositório Git existente para o seu sistema local, use o seguinte
+                                comando (substitua &lt;URL&gt; pela URL do repositório que deseja clonar).</td>
+                        </tr>
+                        <tr>
+                            <th>git add nome_do_arquivo</th>
+                            <td>Para adicionar arquivos ao controle de versão, use o seguinte comando.</td>
+                        </tr>
+                        <tr>
+                            <th>git add .</th>
+                            <td>Para adicionar todos os arquivos do diretório, use.</td>
+                        </tr>
+                        <tr>
+                            <th>git commit -m "Mensagem de commit"</th>
+                            <td>Após adicionar os arquivos, você deve criar um commit para registrar as mudanças.</td>
+                        </tr>
+                        <tr>
+                            <th>git reset --soft HEAD~1</th>
+                            <td>Se você cometeu algo errado, pode desfazer o último commit local com:
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>git status</th>
+                            <td>Para verificar o status dos arquivos no repositório, use.</td>
+                        </tr>
+                        <tr>
+                            <th>git log</th>
+                            <td>Para visualizar o histórico de commits, use.</td>
+                        </tr>
+                        <tr>
+                            <th>git pull</th>
+                            <td>Para atualizar o repositório local com as últimas alterações do repositório remoto, use.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>git push</th>
+                            <td>Para enviar seus commits para o repositório remoto, use.</td>
+                        </tr>
+                        <tr>
+                            <th>git branch</th>
+                            <td>Para listar todas as branches no seu repositório, use:
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>git branch nome_da_branch</th>
+                            <td>Para criar uma nova branch no seu repositório Git, use o seguinte comando:
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>git branch -m nome_antigo nome_novo</th>
+                            <td>Para renomear uma branch, você pode usar o seguinte conjunto de comandos (substitua
+                                nome_antigo e nome_novo pelos nomes apropriados):
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>git remote -v</th>
+                            <td>Para listar os repositórios remotos associados ao seu projeto Git, use:
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>git remote add nome_remoto URL_do_repositório</th>
+                            <td>Para adicionar um repositório remoto, use:
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>git remote remove nome_remoto</th>
+                            <td>Para remover um repositório remoto, use:
+                            </td>
+                        </tr>
+
+                        
+
+                    </table>
+                </article>
+            </div>
+
+            <div class="butao"><br>
+                <a href="./index.html" target="_self" class="botao">Voltar para tela inicial</a>
+            </div>
+        </main>
+    </nav>
+    <footer>
+        <p>todos os direitos reservados © </p>
+    </footer>
+</body>
+
+</html>

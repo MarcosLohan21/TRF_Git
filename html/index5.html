@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalação e Configuracão</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="ico" href="./../img/git.png" type="image/png">
+    <style>
+        main {
+            width: 50%;
+            margin-left: 30%;
+        }
+
+        article {
+            margin-top: 10%;
+            background-color: rgba(255, 157, 0, 0.212);
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        h1 {
+            font-size: 24px;
+
+        }
+
+        article .codigos {
+            background: #292a2b;
+            width: 350px;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 10px;
+        }
+
+        .destaque {
+            color: #19c37d;
+        }
+
+        article .codigos p {
+            color: white;
+        }
+
+        article .codigos2 {
+            background: #292a2b;
+            width: 390px;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 10px;
+        }
+
+        article .codigos3 {
+            background: #292a2b;
+            width: 390px;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 10px;
+            color: white;
+        }
+
+        article .codigos4 {
+            background: #292a2b;
+            width: 390px;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 10px;
+            color: white;
+        }
+
+        article .codigos5 {
+            background: #292a2b;
+            width: 390px;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .destaque {
+            color: #19c37d;
+        }
+
+        article .codigos2 p {
+            color: white;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.842);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 928px;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        .botao {
+            background: orangered;
+            color: white;
+            border: 2px solid black;
+            margin-left: 320px;
+            width: 100px;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-style: oblique;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .botao:focus {
+            outline: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Repositórios Remotos do <span class="destaque">Git</span></h1>
+    </header>
+    <nav>
+        <main>
+            <article>
+                <h1>Repositório Remoto GIT</h1>
+
+                <p>Um repositório remoto no Git é uma versão de um repositório Git que está localizada em um servidor ou
+                    em outro local fora de sua máquina local. Os repositórios remotos permitem colaboração e
+                    compartilhamento de código entre diferentes desenvolvedores. Alguns conceitos e comandos importantes
+                    relacionados a repositórios remotos no Git incluem:</p>
+                <ol>
+                    <li>Clonar um repositório remoto: Para criar uma cópia local de um repositório remoto em sua
+                        máquina, você pode usar o comando git clone. Por exemplo:</li><br>
+                    <div class="codigos">
+                        <p>git<span class="destaque"> "clone" </span>URL_do_repositório_remoto</p>
+                    </div>
+                    <li>Adicionar um repositório remoto: Para conectar seu repositório local a um repositório remoto,
+                        você pode usar o comando git remote add. Isso dá um nome (geralmente "origin") ao repositório
+                        remoto. Por exemplo:</li><br>
+                    <div class="codigos2">
+                        <p>git remote <span class="destaque"> "add" </span>origin URL_do_repositório_remoto</p>
+                    </div>
+                    <li>Listar repositórios remotos: Para listar os repositórios remotos associados ao seu projeto
+                        local, você pode usar git remote -v.</li>
+                    <li>Atualizar de um repositório remoto: Para obter as últimas alterações de um repositório remoto
+                        para seu repositório local, use o comando git pull. Por exemplo:</li>
+                    <div class="codigos3">
+                        <p>git pull <span class="destaque"> "origin" </span>branch_remote</p>
+                    </div>
+                    <li>Enviar alterações para um repositório remoto: Para enviar suas alterações locais para um
+                        repositório remoto, use git push. Por exemplo:</li>
+                    <div class="codigos4">
+                        <p>git push<span class="destaque"> "origin" </span>branch_local</p>
+                    </div>
+                    <li>Ramos remotos: Você pode ver os ramos remotos disponíveis usando git branch -r. Para criar um
+                        novo ramo local baseado em um ramo remoto, use git checkout -b <br><br> nome_novo_ramo
+                        origin/nome_ramo_remoto.</li><br><br>
+                    <li>Remover um repositório remoto: Você pode remover um repositório remoto com o comando git remote
+                        rm. Por exemplo:</li>
+                    <div class="codigos5">
+                        <p>git remote<span class="destaque"> "rm" </span>nome_do_repositorio_remoto</p>
+                    </div>
+                </ol>
+
+                <div class="butao"><br>
+                    <a href="./index.html" target="_self" class="botao">Voltar para tela inicial</a>
+                </div>
+        </main>
+        <footer>Todos os direitos reservados ©</footer>
+    </nav>
+</body>
+
+</html>
