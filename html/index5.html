@@ -12,8 +12,10 @@
     <link rel="ico" href="./../img/git.png" type="image/png">
     <style>
         main {
-            width: 50%;
+            width: 42%;
+            margin-top: 5%; 
             margin-left: 30%;
+            margin-bottom: 3%;
         }
 
         article {
@@ -107,7 +109,7 @@
             background: orangered;
             color: white;
             border: 2px solid black;
-            margin-left: 320px;
+            margin-left: 270px;
             width: 100px;
             padding: 10px 20px;
             font-size: 20px;
@@ -144,36 +146,46 @@
                     relacionados a repositórios remotos no Git incluem:</p>
                 <ol>
                     <li>Clonar um repositório remoto: Para criar uma cópia local de um repositório remoto em sua
-                        máquina, você pode usar o comando git clone. Por exemplo:</li><br>
+                        máquina, você pode usar o comando git clone. Por exemplo:</li>
+                    <br>
                     <div class="codigos">
                         <p>git<span class="destaque"> "clone" </span>URL_do_repositório_remoto</p>
                     </div>
+                    <br>
                     <li>Adicionar um repositório remoto: Para conectar seu repositório local a um repositório remoto,
                         você pode usar o comando git remote add. Isso dá um nome (geralmente "origin") ao repositório
-                        remoto. Por exemplo:</li><br>
+                        remoto. Por exemplo:</li>
+                    <br>
                     <div class="codigos2">
                         <p>git remote <span class="destaque"> "add" </span>origin URL_do_repositório_remoto</p>
                     </div>
+                    <br>
                     <li>Listar repositórios remotos: Para listar os repositórios remotos associados ao seu projeto
                         local, você pode usar git remote -v.</li>
                     <li>Atualizar de um repositório remoto: Para obter as últimas alterações de um repositório remoto
                         para seu repositório local, use o comando git pull. Por exemplo:</li>
+                    <br>
                     <div class="codigos3">
                         <p>git pull <span class="destaque"> "origin" </span>branch_remote</p>
                     </div>
+                    <br>
                     <li>Enviar alterações para um repositório remoto: Para enviar suas alterações locais para um
                         repositório remoto, use git push. Por exemplo:</li>
+                    <br>
                     <div class="codigos4">
                         <p>git push<span class="destaque"> "origin" </span>branch_local</p>
                     </div>
+                    <br>
                     <li>Ramos remotos: Você pode ver os ramos remotos disponíveis usando git branch -r. Para criar um
                         novo ramo local baseado em um ramo remoto, use git checkout -b <br><br> nome_novo_ramo
                         origin/nome_ramo_remoto.</li><br><br>
                     <li>Remover um repositório remoto: Você pode remover um repositório remoto com o comando git remote
                         rm. Por exemplo:</li>
+                    <br>
                     <div class="codigos5">
                         <p>git remote<span class="destaque"> "rm" </span>nome_do_repositorio_remoto</p>
                     </div>
+                    <br>
                 </ol>
 
                 <div class="butao"><br>

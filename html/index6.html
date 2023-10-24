@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico e Log</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./../img/git.png" type="image/x-icon">
+    <link rel="ico" href="./../img/git.png" type="image/png">
+    <style>
+        main{
+            margin-top: 19%; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(214, 201, 179);
+        }
+
+        tr:nth-child(even) {
+            background-color: papayawhip;
+        }
+
+        tr:nth-child(odd) {
+            background-color: papayawhip;
+        }
+
+        tr:hover {
+            background-color: rgb(143, 131, 112);
+        }
+
+        .destaque {
+            color: rgb(255, 69, 0);
+        }
+
+
+        li {
+            list-style: none;
+            font-size: larger;
+            line-height: 1.5;
+            font-size: 17px;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        main .artigo1 {
+            background-color: #50505027;
+            padding: 5px;
+            width: 800px;
+            margin-left: 520px;
+            margin-top: 150px;
+            text-align: left;
+            border: 2px solid black;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .botao {
+            background: orangered;
+            color: white;
+            border: 2px solid black;
+            margin-left: 850px;
+            width: 100px;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-style: oblique;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .botao:focus {
+            outline: none;
+        }
+
+
+        img {
+            border-radius: 20%;
+            margin-left: 600px;
+            width: auto;
+            height: 250px;
+
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.842);
+            color: #fff;
+            padding: 0px;
+            text-align: center;
+            position: fixed;
+            top: 917px;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.342);
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Histórico e <span class="destaque">Log</span></h1>
+    </header>
+    <nav>
+        <main>
+            <div class="artigo1">
+                <article>
+                    <table border="1px">
+                        <tr>
+                            <th>Comando</th>
+                            <th>Descrição</td>
+                        </tr>
+                        <tr>
+                            <th>Git Log</th>
+                            <td>Exibe o histórico de commits no repositório.</td>
+                        </tr>
+                        <tr>
+                            <th>Git Log --oneline</th>
+                            <td>Exibe cada commit em uma única linha, mostrando apenas o hash e a mensagem do commit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Git Log --author="nome"</th>
+                            <td>Exibe commits feitos por um autor específico.</td>
+                        </tr>
+                        <tr>
+                            <th>Git Log --grep="padrão"</th>
+                            <td>Exibe commits cujas mensagens correspondem ao padrão especificado.</td>
+                        </tr>
+                        <tr>
+                            <th>Git Log --all</th>
+                            <td>Exibe o histórico de todos os branches, não apenas o branch atual.</td>
+                        </tr>
+                        <tr>
+                            <th>Git Shortlog</th>
+                            <td>é um log resumido, mostra o que foi feito a todos que realizaram caso tivesse uma equipe
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+
+
+
+            <div class="butao"><br>
+                <a href="./index.html" target="_self" class="botao">Voltar para tela inicial</a>
+            </div>
+        </main>
+    </nav>
+    <footer>
+        <p>todos os direitos reservados © </p>
+    </footer>
+</body>
+
+</html>
